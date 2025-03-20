@@ -32,6 +32,7 @@
     "clean": "rm -rf node_modules",
     "fix": "eslint --fix --quiet . ; prettier --write --log-level=silent .",
     "lint": "eslint . && prettier --check .",
+    "prepare": "husky",
     "prepublishOnly": "bun run ci",
     "release": "np",
     "test": "exit 0",
@@ -52,10 +53,17 @@
     "@dexaai/config": "latest",
     "@types/bun": "^1",
     "eslint": "^9",
+    "husky": "^9",
+    "lint-staged": "^15",
     "np": "^10",
     "oclif": "^4",
     "prettier": "^3",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,json,md,mdx}": [
+      "prettier --write"
+    ]
   },
   "bun-create": {
     "preinstall": "rm -rf bun.lock",
