@@ -1,0 +1,11 @@
+ignorePatterns:
+  - '**/*.lock'
+  - '**/*.lock.json'
+  - '**/*.lockb'
+  - '**/node_modules'
+  - '**/.env'
+checkCommands:
+  fix: bun run fix
+  lint: bun run lint
+  types: bun run typecheck
+  test: bun run test
