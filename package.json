@@ -35,7 +35,7 @@
     "prepare": "husky",
     "prepublishOnly": "bun run ci",
     "release": "np",
-    "test": "exit 0",
+    "test": "bun test",
     "typecheck": "tsc --noEmit"
   },
   "prettier": "@dexaai/config/prettier",
@@ -55,9 +55,11 @@
     "eslint": "^9",
     "husky": "^9",
     "lint-staged": "^15",
+    "msw": "2.3.1",
     "np": "^10",
     "oclif": "^4",
     "prettier": "^3",
+    "stdout-stderr": "^0.1.13",
     "typescript": "^5"
   },
   "lint-staged": {

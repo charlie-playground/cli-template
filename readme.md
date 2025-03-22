@@ -13,8 +13,7 @@ A simple CLI powered by [Bun](https://bun.sh/) and [Oclif](https://oclif.io/).
    bun link cli-template
    ```
 5. Run the CLI:
-   - `cli-template hello world`
-   - `cli-template hello bill --from sue`
+   - `cli-template weather brooklyn`
    - `cli-template help`
 
 ## Develop
@@ -24,3 +23,7 @@ Run `bun run dev --help` to get started in development mode. There's no need to 
 ## Publish
 
 Run `bun run release` to publish the package to npm.
+
+## Testing
+
+Note: `msw` must be pinned to version `2.3.1` or there is an issue with Bun support. [[source](https://github.com/oven-sh/bun/issues/13072)]
