@@ -67,6 +67,10 @@
       "prettier --write"
     ]
   },
+  "packageManager": "bun@1.2.5",
+  "engines": {
+    "bun": "1"
+  },
   "bun-create": {
     "preinstall": "rm -rf bun.lock",
     "postinstall": "bun run build",
