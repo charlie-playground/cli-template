@@ -4,7 +4,7 @@ A simple CLI powered by [Bun](https://bun.sh/) and [Oclif](https://oclif.io/).
 
 ## Install
 
-1. Run `bun create charlie-labs/cli-template <dir_name>` to create a new CLI project.
+1. Run `bun create charlie-playground/cli-template <dir_name>` to create a new CLI project.
 2. Navigate to the new directory: `cd <dir_name>`.
 3. Run the install script to set the CLI tool name: `./install.sh <tool_name>`.
 4. Register the project in the Bun global scope and install the CLI:
